@@ -14,8 +14,6 @@ export async function POST(req: NextRequest) {
   }
 
   const { name, email, contact, service } = await req.json();
-  console.log(name, email, contact, service);
-
   if (!name || !email || !contact || !service) {
     return NextResponse.json(
       { error: "Please provide all the required information" },

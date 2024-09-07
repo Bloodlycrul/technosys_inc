@@ -85,7 +85,7 @@ export default function Header() {
             {menuItems.map((item) => (
               <a
                 key={item.id}
-                href="#"
+                href={item.link}
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
                   isScrolled
                     ? "text-gray-300 hover:bg-indigo-700 hover:text-white"

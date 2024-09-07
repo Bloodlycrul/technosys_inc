@@ -1,3 +1,4 @@
+
 export const testimonials = [
   {
     quote:
@@ -160,6 +161,11 @@ export const menuItems = [
   },
   {
     id: 5,
+    link: "/blog",
+    name: "Blog",
+  },
+  {
+    id: 6,
     link: "/contact",
     name: "Contact",
   },
@@ -185,5 +191,10 @@ export const footerMenuItems = [
     id: 4,
     link: "/",
     name: "Careers",
+  },
+  {
+    id: 5,
+    link: "/blog",
+    name: "Blog",
   },
 ];
