@@ -10,3 +10,7 @@ jobs:
           npm install
           npm run build
           npm run start
+        env:
+          NEXT_PUBLIC_BLOG_URL: ${{ secrets.NEXT_PUBLIC_BLOG_URL }}
+          NEXT_PUBLIC_GOOGLE_MAPS_API_KEY: ${{ secrets.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY }}
+          RESEND_API_KEY: ${{secrets.RESEND_API_KEY}}
