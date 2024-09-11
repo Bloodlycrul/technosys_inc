@@ -1,0 +1,10 @@
+name: "Check the lint"
+on: ["push"]
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: npm run build
+      - run: npm run start
