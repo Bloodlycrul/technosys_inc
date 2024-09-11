@@ -8,7 +8,6 @@ export async function generateMetadata({
   params: { id: string };
 }): Promise<Metadata> {
   const post = await getPost(Number(params.id));
-  console.log(post);
   return {
     title: post.post.title,
     description: post.post.excerpt,

@@ -9,10 +9,14 @@ const Latestwork = () => {
   ));
   return (
     <div className="w-full h-full py-20">
-      <h2 className="max-w-7xl pl-4 mx-auto md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 text-5xl">
-        Discover our latest work
-      </h2>
-      <Carousel items={cards} />
+      <Carousel
+        items={cards}
+        title={
+          <h2 className=" mx-auto md:text-5xl md:font-bold text-neutral-800 dark:text-neutral-200 text-2xl">
+            Discover our latest work
+          </h2>
+        }
+      />
     </div>
   );
 };

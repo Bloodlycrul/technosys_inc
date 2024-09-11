@@ -1,4 +1,5 @@
 import Contact from "@/components/Contact";
+import FrequentlyAskedQuestion from "@/components/FrequentlyAskedQuestion";
 import { TabsDemo } from "@/components/teamGeathering";
 import CallSchedule from "@/components/ui/CallSchedule";
 import FounderTweet from "@/components/ui/founder-tweet";
@@ -19,6 +20,7 @@ export default function Home() {
         <LogoSlider />
         <FounderTweet />
         <CallSchedule />
+        <FrequentlyAskedQuestion />
         <LetsChat />
         <Contact />
       </main>

@@ -9,7 +9,7 @@ const CallSchedule = () => {
       <LampContainer className="">
         <div className=" lg:mt-48 lg:mx-48">
           <h1 className="text-center text-3xl   text-black font-bold ">
-            YOUR PATH TO GROWTH
+            All it takes is 4 simple steps
           </h1>
           <hr className="divide-y-1 w-full mt-[50px] h-0.5 my-4 bg-white" />
           {/* First */}
