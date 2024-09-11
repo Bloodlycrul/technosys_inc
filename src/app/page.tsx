@@ -1,5 +1,6 @@
 import Contact from "@/components/Contact";
 import FrequentlyAskedQuestion from "@/components/FrequentlyAskedQuestion";
+import Reimagine from "@/components/Reimagine";
 import { TabsDemo } from "@/components/teamGeathering";
 import CallSchedule from "@/components/ui/CallSchedule";
 import FounderTweet from "@/components/ui/founder-tweet";
@@ -16,6 +17,7 @@ export default function Home() {
         <HeroSection />
         {/*  This is the new vim   */}
         <Latestwork />
+        <Reimagine />
         <CardHoverEffectDemo />
         <LogoSlider />
         <FounderTweet />

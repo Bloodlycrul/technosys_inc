@@ -189,49 +189,73 @@ export const footerMenuItems = [
   },
 ];
 
+export const FAQs = [
+  {
+    question: "What digital marketing services does Technosys Incor offer?",
+    answer:
+      "Technosys Incor offers a wide range of services including SEO, Social Media Marketing, PPC Advertising, Web Development, and Content Marketing. Each service is tailored to help businesses improve their online presence and achieve measurable results.",
+  },
+  {
+    question: "How can SEO improve my business’s online visibility?",
+    answer:
+      "Our SEO strategies focus on improving your website’s ranking on search engines like Google. By optimizing your website's content, structure, and performance, we help you attract more organic traffic and increase your visibility to potential customers.",
+  },
+  {
+    question: "What’s the difference between organic SEO and paid advertising?",
+    answer:
+      "Organic SEO is a long-term strategy that helps your website rank higher in search results through optimization. It takes time but provides lasting results. Paid advertising (PPC) gives you instant visibility by paying for ads on platforms like Google and social media, driving immediate traffic.",
+  },
+  {
+    question: "How do you create a social media marketing strategy?",
+    answer:
+      "We begin by analyzing your business goals, audience demographics, and industry trends. Based on this, we create a content plan, choose the right platforms, and develop campaigns that engage your audience, build brand awareness, and drive conversions.",
+  },
+  {
+    question: "What industries do you specialize in for digital marketing?",
+    answer:
+      "Technosys Incor works across various industries, including e-commerce, healthcare, real estate, education, and hospitality. Our team develops industry-specific strategies to address the unique needs and challenges of each sector.",
+  },
+  {
+    question: "How do you measure the success of a PPC campaign?",
+    answer:
+      "We measure PPC campaign success by tracking metrics such as Click-Through Rate (CTR), Cost Per Click (CPC), Conversion Rate, and Return on Investment (ROI). We provide detailed reports so you can see exactly how your ad spend translates into leads and sales.",
+  },
+  {
+    question: "What types of websites do you develop?",
+    answer:
+      "We develop a variety of websites, including corporate websites, e-commerce platforms, custom-built sites, and CMS-based solutions like WordPress. All of our websites are designed to be responsive, user-friendly, and optimized for performance.",
+  },
+  {
+    question: "Can you help improve an existing website’s performance?",
+    answer:
+      "Yes, we offer website optimization services that improve your site’s loading speed, usability, mobile responsiveness, and SEO performance. These improvements can lead to better user engagement, higher search rankings, and increased conversions.",
+  },
+  {
+    question: "How long does it take to see results from SEO?",
+    answer:
+      "SEO is a long-term strategy, and results typically begin to show within 3-6 months. However, the timeline can vary depending on factors like competition, industry, and the current state of your website. Consistent effort is key to achieving lasting improvements.",
+  },
+  {
+    question: "What are the benefits of content marketing for my business?",
+    answer:
+      "Content marketing helps establish your brand as an authority in your industry by providing valuable information to your audience. This can increase customer trust, drive organic traffic, improve SEO rankings, and generate leads. Our content strategies are designed to engage your audience and drive profitable customer actions.",
+  },
+];
 
-
-
- export const FAQs = [
-    {
-      "question": "What digital marketing services does Technosys Incor offer?",
-      "answer": "Technosys Incor offers a wide range of services including SEO, Social Media Marketing, PPC Advertising, Web Development, and Content Marketing. Each service is tailored to help businesses improve their online presence and achieve measurable results."
-    },
-    {
-      "question": "How can SEO improve my business’s online visibility?",
-      "answer": "Our SEO strategies focus on improving your website’s ranking on search engines like Google. By optimizing your website's content, structure, and performance, we help you attract more organic traffic and increase your visibility to potential customers."
-    },
-    {
-      "question": "What’s the difference between organic SEO and paid advertising?",
-      "answer": "Organic SEO is a long-term strategy that helps your website rank higher in search results through optimization. It takes time but provides lasting results. Paid advertising (PPC) gives you instant visibility by paying for ads on platforms like Google and social media, driving immediate traffic."
-    },
-    {
-      "question": "How do you create a social media marketing strategy?",
-      "answer": "We begin by analyzing your business goals, audience demographics, and industry trends. Based on this, we create a content plan, choose the right platforms, and develop campaigns that engage your audience, build brand awareness, and drive conversions."
-    },
-    {
-      "question": "What industries do you specialize in for digital marketing?",
-      "answer": "Technosys Incor works across various industries, including e-commerce, healthcare, real estate, education, and hospitality. Our team develops industry-specific strategies to address the unique needs and challenges of each sector."
-    },
-    {
-      "question": "How do you measure the success of a PPC campaign?",
-      "answer": "We measure PPC campaign success by tracking metrics such as Click-Through Rate (CTR), Cost Per Click (CPC), Conversion Rate, and Return on Investment (ROI). We provide detailed reports so you can see exactly how your ad spend translates into leads and sales."
-    },
-    {
-      "question": "What types of websites do you develop?",
-      "answer": "We develop a variety of websites, including corporate websites, e-commerce platforms, custom-built sites, and CMS-based solutions like WordPress. All of our websites are designed to be responsive, user-friendly, and optimized for performance."
-    },
-    {
-      "question": "Can you help improve an existing website’s performance?",
-      "answer": "Yes, we offer website optimization services that improve your site’s loading speed, usability, mobile responsiveness, and SEO performance. These improvements can lead to better user engagement, higher search rankings, and increased conversions."
-    },
-    {
-      "question": "How long does it take to see results from SEO?",
-      "answer": "SEO is a long-term strategy, and results typically begin to show within 3-6 months. However, the timeline can vary depending on factors like competition, industry, and the current state of your website. Consistent effort is key to achieving lasting improvements."
-    },
-    {
-      "question": "What are the benefits of content marketing for my business?",
-      "answer": "Content marketing helps establish your brand as an authority in your industry by providing valuable information to your audience. This can increase customer trust, drive organic traffic, improve SEO rankings, and generate leads. Our content strategies are designed to engage your audience and drive profitable customer actions."
-    }
-  ]
-
+export const sections = [
+  {
+    heading: "Overwhelmed by Promises of Instant Results?",
+    content:
+      "Work with a team that delivers data-driven strategies, not false promises. Our tailored marketing solutions are focused on sustainable growth, ensuring that every dollar you spend yields measurable outcomes.",
+  },
+  {
+    heading: "Need More Than Just Marketing Ideas?",
+    content:
+      "Get access to a full-service marketing team—strategists, creatives, developers, and ad experts—all dedicated to crafting and executing a cohesive strategy that drives your business forward.",
+  },
+  {
+    heading: "Struggling to Convert Traffic into Customers?",
+    content:
+      "We help optimize your website and ad funnels to improve conversions. From SEO to PPC, we enhance every aspect of your digital presence to turn visitors into loyal customers.",
+  },
+];

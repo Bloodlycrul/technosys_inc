@@ -23,8 +23,8 @@ export default function LogoSlider() {
       <h1 className="text-center text-3xl text-gray-400">
         Trusted by big industries
       </h1>
-      <div className="relative flex  m-auto w-2/3 flex-col gap-11 items-center justify-center overflow-hidden rounded-lg  bg-background ">
-        <Marquee pauseOnHover className="[--duration:20s]">
+      <div className="relative flex  m-auto  flex-col gap-11 items-center justify-center overflow-hidden rounded-lg  bg-background ">
+        <Marquee  pauseOnHover className="[--duration:20s]">
           {firstRow.map((review) => (
             <ReviewCard key={review.img} {...review} />
           ))}
