@@ -12,8 +12,8 @@ const Latestwork = () => {
       <Carousel
         items={cards}
         title={
-          <h2 className=" mx-auto md:text-5xl md:font-bold text-neutral-800 dark:text-neutral-200 text-2xl">
-            Discover our latest work
+          <h2 className=" text-2xl  md:text-5xl md:font-bold text-neutral-800 dark:text-white ">
+            Case Studies
           </h2>
         }
       />
