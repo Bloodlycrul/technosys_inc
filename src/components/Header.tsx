@@ -28,8 +28,8 @@ export default function Header() {
       <div
         className={
           isScrolled
-            ? "hidden md:flex px-4 py-2 items-center justify-between bg-black border-b-2 border-white/15"
-            : "hidden md:flex px-4 py-2 items-center justify-between"
+            ? "hidden md:flex px-4 py-2 items-center justify-between  border-b-2 backdrop-blur border-white/15"
+            : "hidden md:flex px-4 py-2 items-center justify-between "
         }
       >
         <Link className="cursor-pointer" href={"/"}>

@@ -1,5 +1,13 @@
 import React from "react";
 import { sections } from "@/lib/constant";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 const Reimagine = () => {
   return (
     <div className="my-9 w-10/12 m-auto">
@@ -32,9 +40,9 @@ export const ReimagineCard = ({
   description: string;
 }) => {
   return (
-    <div className="bg-[#0A0A0A] p-10">
-      <p className="text-2xl font-bold mb-2 ">{title}</p>
-      <p className="text-gray-500">{description}</p>
-    </div>
+    <Card className="p-10">
+      <CardTitle>{title}</CardTitle>
+      <CardDescription className="mt-3">{description}</CardDescription>
+    </Card>
   );
 };

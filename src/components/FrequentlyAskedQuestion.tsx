@@ -9,24 +9,34 @@ import { FAQs } from "@/lib/constant";
 
 const FrequentlyAskedQuestion = () => {
   return (
-    <div className="px-10 py-7">
-      <p className="text-2xl font-semibold mb-3">FrequentlyAskedQuestion</p>
-      {FAQs &&
-        FAQs.map((item) => {
-          return (
-            <Accordion
-              key={item.question}
-              className="border-b-2 border-white/35"
-              type="single"
-              collapsible
-            >
-              <AccordionItem value={item.question}>
-                <AccordionTrigger>{item.question}</AccordionTrigger>
-                <AccordionContent>{item.answer}</AccordionContent>
-              </AccordionItem>
-            </Accordion>
-          );
-        })}
+    <div className="px-10 py-7 flex flex-col lg:flex-row justify-between space-y-6 lg:space-y-0">
+      <div className="lg:w-1/3">
+        <p className="text-5xl font-semibold leading-tight">
+          Frequently Asked <br /> Questions
+        </p>
+      </div>
+      <div className="lg:w-2/3 space-y-4">
+        {FAQs &&
+          FAQs.map((item) => {
+            return (
+              <Accordion
+                key={item.question}
+                className=" pb-4"
+                type="single"
+                collapsible
+              >
+                <AccordionItem value={item.question}>
+                  <AccordionTrigger className="text-xl font-medium ">
+                    {item.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-gray-600 mt-2">
+                    {item.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            );
+          })}
+      </div>
     </div>
   );
 };
