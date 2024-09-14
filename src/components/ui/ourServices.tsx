@@ -21,7 +21,7 @@ export function CardHoverEffectDemo() {
           Our Services <BorderBeam />
         </Highlight>
       </div>
-      <div className=" w-full mx-auto px-8">
+      <div className=" w-full mx-auto ">
         <HoverEffect items={projects} />
       </div>
     </>

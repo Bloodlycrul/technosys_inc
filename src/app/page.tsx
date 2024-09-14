@@ -18,7 +18,9 @@ export default function Home() {
         {/*  This is the new vim   */}
         <Latestwork />
         <Reimagine />
-        <CardHoverEffectDemo />
+        <div className="md:px-8">
+          <CardHoverEffectDemo />
+        </div>
         <LogoSlider />
         <FounderTweet />
         <CallSchedule />

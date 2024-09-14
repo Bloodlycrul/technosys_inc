@@ -11,7 +11,7 @@ const FrequentlyAskedQuestion = () => {
   return (
     <div className="px-10 py-7 flex flex-col lg:flex-row justify-between space-y-6 lg:space-y-0">
       <div className="lg:w-1/3">
-        <p className="text-5xl font-semibold leading-tight">
+        <p className="text-2xl md:text-5xl font-semibold leading-tight">
           Frequently Asked <br /> Questions
         </p>
       </div>
@@ -26,7 +26,7 @@ const FrequentlyAskedQuestion = () => {
                 collapsible
               >
                 <AccordionItem value={item.question}>
-                  <AccordionTrigger className="text-xl font-medium ">
+                  <AccordionTrigger className="text-start  md:text-xl font-medium ">
                     {item.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-gray-600 mt-2">

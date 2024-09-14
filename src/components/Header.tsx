@@ -1,5 +1,4 @@
 "use client";
-
 import { menuItems } from "@/lib/constant";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
@@ -13,6 +12,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
+      // handle the scroll event here 
       if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {

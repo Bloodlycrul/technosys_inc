@@ -8,7 +8,7 @@ import { Button } from "./button";
 const HeroSection = () => {
   return (
     <>
-      <div className="hidden md:w-full md:block md:relative overflow-x-hidden">
+      <div className="hidden   md:w-full md:block md:relative overflow-x-hidden">
         {/* desktop */}
         <HeroHighlight className="text-center">
           <Highlight className="text-5xl font-bold">
