@@ -10,11 +10,11 @@ import {
 } from "@/components/ui/card";
 const Reimagine = () => {
   return (
-    <div className="my-9 w-10/12 m-auto">
+    <div className=" my-9 w-10/12 m-auto">
       <p className="text-3xl mb-5 font-semibold ">
         Reimagine your brand, minus the <br /> headaches and high costs.
       </p>
-      <div className="flex flex-1 gap-6">
+      <div className="flex flex-wrap md:flex-nowrap flex-1 gap-6">
         {sections.map((section) => {
           return (
             <div className="" key={section.heading}>

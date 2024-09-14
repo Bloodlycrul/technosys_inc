@@ -1,3 +1,4 @@
+import Contact from "@/components/Contact";
 import FrequentlyAskedQuestion from "@/components/FrequentlyAskedQuestion";
 import { CardHoverEffectDemo } from "@/components/ui/ourServices";
 import React from "react";
@@ -17,6 +18,9 @@ const OurServices = () => {
       </div>
       <div className="mt-11">
         <FrequentlyAskedQuestion />
+      </div>
+      <div className="mt-11">
+        <Contact />
       </div>
     </div>
   );

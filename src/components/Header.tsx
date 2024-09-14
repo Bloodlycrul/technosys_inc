@@ -12,7 +12,7 @@ export default function Header() {
 
   useEffect(() => {
     const handleScroll = () => {
-      // handle the scroll event here 
+      // handle the scroll event here
       if (window.scrollY > 50) {
         setIsScrolled(true);
       } else {
@@ -32,7 +32,7 @@ export default function Header() {
             : "hidden md:flex px-4 py-2 items-center justify-between "
         }
       >
-        <Link className="cursor-pointer" href={"/"}>
+        <Link className="cursor-pointer" href="/">
           <Image
             src={
               "https://technosysincor.com/wp-content/uploads/2022/06/Technosys-logo.png"
@@ -69,17 +69,19 @@ export default function Header() {
       <div
         className={
           isScrolled
-            ? "fixed top-0 z-50 flex items-center justify-between py-4 px-9 md:hidden w-full bg-black border-b-2 border-white/20"
+            ? "fixed top-0 z-50 flex items-center justify-between py-4 px-9 md:hidden w-full backdrop-blur border-b-2 border-white/20"
             : "fixed top-0 z-50 flex items-center justify-between py-4 px-9 md:hidden w-full"
         }
       >
-        <Image
-          src="https://technosysincor.com/wp-content/uploads/2022/06/Technosys-logo.png"
-          alt="Technosys Inc"
-          width={60}
-          height={60}
-          priority
-        />
+        <Link href={"/"}>
+          <Image
+            src="https://technosysincor.com/wp-content/uploads/2022/06/Technosys-logo.png"
+            alt="Technosys Inc"
+            width={60}
+            height={60}
+            priority
+          />
+        </Link>
         <div className="flex gap-4 items-center">
           <Button>Let&apos;s talk</Button>
           {isMenuOpen ? (

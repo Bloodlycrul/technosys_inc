@@ -4,10 +4,10 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="px-11 mb-24">
+    <footer className="px-2 md:px-11 mb-24">
       <hr className="my-5 h-0.5 bg-white" />
       {/* Company */}
-      <div className="flex justify-between ">
+      <div className="flex flex-col md:flex-row justify-between ">
         <div className="">
           <h2 className="text-4xl font-bold ">Technosys Inc.</h2>
           <p className="text-1xl ">

@@ -46,7 +46,7 @@ const HeroSection = () => {
           {" "}
           A Full-Service Digital Agency
         </Highlight>
-        <h1 className="text-5xl font-bold">Technosys Inc</h1>
+        <h1 className="text-4xl md:text-5xl font-bold">Technosys Inc</h1>
         <p className="text-start">
           Technosys Incor is a full-service digital agency from India, trusted
           by <span className="font-bold"> startups</span> and{" "}

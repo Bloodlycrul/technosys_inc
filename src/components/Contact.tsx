@@ -109,103 +109,106 @@ export default function Contact() {
   }
 
   return (
-    <div className="mb-40 lg:w-10/12 m-auto">
-      <div className="flex flex-col lg:items-start lg:flex-row lg:justify-between my-8">
+    <div className="mb-40  lg:w-10/12 m-auto px-3">
+      <div className="flex flex-col  lg:items-start lg:flex-row lg:justify-between my-8">
         <div className="text-5xl font-bold">How can we help you?</div>
         <Link className="cursor-pointer" href="mailto:info@technosysincor.com">
           info@technosysincor.com
         </Link>
       </div>
-
-      <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-          <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8">
-            <div className="space-y-4 w-full lg:w-1/2">
-              <FormField
-                control={form.control}
-                name="username"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Username</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Username" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Email" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="contact"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Contact</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Contact" {...field} />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
+      <div className="border-white border p-4 md:p-8 rounded-3xl">
+        <Form {...form}>
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+            <div className="flex flex-col lg:flex-row lg:justify-between lg:items-start gap-8">
+              <div className="space-y-4 w-full lg:w-1/2">
+                <FormField
+                  control={form.control}
+                  name="username"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Username</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Username" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Email</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Email" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="contact"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Contact</FormLabel>
+                      <FormControl>
+                        <Input placeholder="Contact" {...field} />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
+              <div className="w-full lg:w-1/2">
+                <FormField
+                  control={form.control}
+                  name="items"
+                  render={() => (
+                    <FormItem>
+                      <FormLabel className="text-3xl mb-4 font-bold">
+                        I am interested in
+                      </FormLabel>
+                      <FormControl>
+                        <div className="flex flex-wrap gap-2">
+                          {allServicesContactForm.map((item) => (
+                            <label
+                              key={item.id}
+                              className={`flex items-center justify-center px-4 py-2 text-sm font-medium text-white rounded-full cursor-pointer ${
+                                selectedServices.includes(item.service)
+                                  ? "bg-gradient-to-r from-indigo-300 to-purple-300 dark:from-indigo-500 dark:to-purple-500"
+                                  : "bg-gray-800"
+                              }`}
+                              onClick={() => handleSelect(item.service)}
+                            >
+                              <input
+                                type="checkbox"
+                                name={item.service}
+                                value={item.service}
+                                className="hidden"
+                                checked={selectedServices.includes(
+                                  item.service
+                                )}
+                                onChange={() => handleSelect(item.service)}
+                              />
+                              <span>{item.service}</span>
+                            </label>
+                          ))}
+                        </div>
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+              </div>
             </div>
-            <div className="w-full lg:w-1/2">
-              <FormField
-                control={form.control}
-                name="items"
-                render={() => (
-                  <FormItem>
-                    <FormLabel className="text-3xl mb-4 font-bold">
-                      I am interested in
-                    </FormLabel>
-                    <FormControl>
-                      <div className="flex flex-wrap gap-4">
-                        {allServicesContactForm.map((item) => (
-                          <label
-                            key={item.id}
-                            className={`flex items-center justify-center px-4 py-2 text-sm font-medium text-white rounded-full cursor-pointer ${
-                              selectedServices.includes(item.service)
-                                ? "bg-gradient-to-r from-indigo-300 to-purple-300 dark:from-indigo-500 dark:to-purple-500"
-                                : "bg-gray-800"
-                            }`}
-                            onClick={() => handleSelect(item.service)}
-                          >
-                            <input
-                              type="checkbox"
-                              name={item.service}
-                              value={item.service}
-                              className="hidden"
-                              checked={selectedServices.includes(item.service)}
-                              onChange={() => handleSelect(item.service)}
-                            />
-                            <span>{item.service}</span>
-                          </label>
-                        ))}
-                      </div>
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
-          </div>
-          <Button className="w-2/6" type="submit">
-            {loading ? <Loader /> : "Submit"}
-          </Button>
-        </form>
-      </Form>
+            <Button className="w-2/6" type="submit">
+              {loading ? <Loader /> : "Submit"}
+            </Button>
+          </form>
+        </Form>
+      </div>
     </div>
   );
 }
