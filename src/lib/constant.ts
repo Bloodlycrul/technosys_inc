@@ -150,7 +150,7 @@ export const menuItems = [
   },
   {
     id: 3,
-    link: "/our-services",
+    link: "/ourservices",
     name: "OurServices",
   },
 
