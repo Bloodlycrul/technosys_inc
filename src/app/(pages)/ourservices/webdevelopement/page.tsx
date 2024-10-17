@@ -1,5 +1,7 @@
+import Contact from "@/components/Contact";
+import ProjectCard from "@/components/ProjectCard";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft } from "lucide-react";
+import LetsChat from "@/components/ui/LetsChat";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -24,7 +26,6 @@ const WebDevelopment = () => {
               <h1 className="text-7xl font-bold ">
                 Web App & E-Commerce Development
               </h1>
-
               <p className="text-2xl font-semibold">
                 Your online operations need tools that are more than just <br />
                 functional; they need to be intuitive and efficient.
@@ -98,6 +99,7 @@ const WebDevelopment = () => {
                   key={index}
                   className="px-3 py-1 rounded-full text-sm font-medium"
                   style={{
+                    padding: "10px 10px",
                     backgroundColor: color[index % color.length],
                     color:
                       color[index % color.length] === "#a9ff3c"
@@ -166,6 +168,290 @@ const WebDevelopment = () => {
           </div>
         </div>
       </div>
+      <div className="mt-20 ml-20 flex  flex-wrap gap-4">
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+      </div>
+      {/* Ecommerce Development */}
+      <div className="mt-20   border-t border-gray-300/45 ">
+        <div className="mt-10 flex gap-40 md:m-20">
+          <div className="flex flex-col gap-4 w-1/3">
+            <h2 className="text-4xl font-bold">E-commerce Development</h2>
+            <p className="text-2xl ">
+              Robust functionality and seamless user expirience to elevate your
+              digital storefront.
+            </p>
+          </div>
+          {/* List of our services */}
+          <div className="w-2/3">
+            <div className="flex flex-wrap gap-2">
+              {[
+                {
+                  title: "Platform Expertise",
+                  description:
+                    "Whether it’s Shopify, WooCommerce, Magento, or any other platform, we have seasoned experts ready to set up and optimize your online store.",
+                  image: "/Analyzing.svg",
+                },
+                {
+                  title: "Custom E-commerce Solutions",
+                  description:
+                    "Need something uniquely yours? We can develop a custom e-commerce platform tailored to your specific requirements.",
+                  image: "/custom-design.svg",
+                },
+                {
+                  title: "Optimized for Sales",
+                  description:
+                    "From user-friendly interfaces to seamless checkout processes, we ensure your customers have a smooth shopping experience.",
+                  image: "/developement-testing.svg",
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className=" flex gap-4 p-4 rounded-lg shadow-md"
+                >
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={50}
+                    height={50}
+                  />
+                  <div className="">
+                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-20 ml-20 flex  flex-wrap gap-4">
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+      </div>
+      {/* Landing Page Development */}
+      <div className="mt-20   border-t border-gray-300/45 ">
+        <div className="mt-10 flex gap-40 md:m-20">
+          <div className="flex flex-col gap-4 w-1/3">
+            <h2 className="text-4xl font-bold">
+              Landing Pages & Marketing Websites
+            </h2>
+            <p className="text-2xl ">
+              Your brand’s voice deserves to be distinctive and memorable.
+            </p>
+          </div>
+          {/* List of our services */}
+          <div className="w-2/3">
+            <div className="flex flex-wrap gap-2">
+              {[
+                {
+                  title: "Aesthetic & Clean",
+                  description:
+                    "Step up your brand's digital presence, blending innovation and aesthetics to leave a lasting impression on your audience.",
+                  image: "/Analyzing.svg",
+                },
+                {
+                  title: "Conversion Focused",
+                  description:
+                    "With our approach, we identify and refine elements that maximize user interaction and conversion potential.",
+                  image: "/custom-design.svg",
+                },
+                {
+                  title: "SEO Excellence",
+                  description:
+                    "We create websites optimized for speed, providing a seamless and satisfying user experience that positively influences search engine rankings.",
+                  image: "/developement-testing.svg",
+                },
+              ].map((item, index) => (
+                <div
+                  key={index}
+                  className=" flex gap-4 p-4 rounded-lg shadow-md"
+                >
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={50}
+                    height={50}
+                  />
+                  <div className="">
+                    <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
+                    <p>{item.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="mt-20 ml-20 flex  flex-wrap gap-4">
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+        <ProjectCard
+          title={"Moo Moves You"}
+          description={
+            "Moo Moves You is the first Digital Moving Marketplace; allowing simplify and standardize the moving process by combining our easy-to-use technology with our nationwide network of moving companies to provide you with a hassle-free moving experience.In collaboration with Moo, Brainstorm has created the product from scratch: from branding and visual standpoint, to the product design, building and launching it."
+          }
+          image={""}
+          tags={[
+            "Web Application",
+            "UI/UX Design",
+            "Product Design",
+            "Content Creation",
+            "Branding",
+          ]}
+        />
+      </div>
+      <div className="border border-gray-300/45 my-20 "></div>
+      <LetsChat />
+      <Contact />
     </div>
   );
 };

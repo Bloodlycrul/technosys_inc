@@ -88,7 +88,7 @@ export const projects = [
     title: "Web Development",
     description:
       "A multinational technology company that specializes in Internet-related services and products.",
-    link: "https://google.com",
+    link: "/ourservices/webdevelopement",
     icon: <FaFileCode size={34} />,
   },
   {
